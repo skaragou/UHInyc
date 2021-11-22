@@ -29,6 +29,9 @@ temp.shape
 unique_locations = temp.groupby(['Latitude','Longitude']).count().reset_index(0).reset_index(0)[['Latitude','Longitude']]
 
 
+unique_locations
+
+
 def get_gdf(locs):
     df = gpd.GeoDataFrame({'geometry': locs}, crs='EPSG:4326')
     df = df.to_crs('EPSG:2263')

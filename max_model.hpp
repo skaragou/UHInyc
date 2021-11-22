@@ -17,171 +17,49 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 59> locations_array__ = 
+static constexpr std::array<const char*, 24> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 42, column 2 to column 9)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 43, column 2 to column 9)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 44, column 2 to column 9)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 45, column 2 to column 9)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 46, column 2 to column 12)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 47, column 2 to column 22)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 55, column 2 to column 139)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 18, column 2 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 19, column 2 to column 22)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 20, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 20, column 2 to column 25)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 21, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 21, column 2 to column 26)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 22, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 22, column 2 to column 30)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 23, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 23, column 2 to column 26)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 24, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 24, column 2 to column 14)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 27, column 2 to column 27)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 28, column 18 to column 19)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 28, column 2 to column 42)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 29, column 9 to column 15)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 29, column 2 to column 79)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 30, column 9 to column 15)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 30, column 2 to column 81)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 31, column 9 to column 15)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 31, column 2 to column 89)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 32, column 9 to column 15)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 32, column 2 to column 81)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 33, column 9 to column 15)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 33, column 2 to column 57)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 35, column 9 to column 16)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 35, column 2 to column 78)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 36, column 9 to column 16)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 36, column 2 to column 80)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 37, column 9 to column 16)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 37, column 2 to column 88)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 38, column 9 to column 16)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 38, column 2 to column 80)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 39, column 9 to column 16)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 39, column 2 to column 56)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 3, column 11 to column 12)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 3, column 5 to column 20)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 5, column 7 to column 16)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 4, column 20 to line 6, column 6)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 4, column 5 to line 6, column 6)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 7, column 12 to column 13)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 7, column 5 to column 46)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 9, column 6 to column 37)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 10, column 12 to column 13)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 10, column 6 to column 28)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 11, column 6 to column 18)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 12, column 6 to column 21)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 8, column 20 to line 13, column 6)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 8, column 5 to line 13, column 6)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 14, column 5 to column 14)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 2, column 37 to line 15, column 3)"};
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 12, column 2 to column 9)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 13, column 2 to column 9)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 14, column 2 to column 9)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 15, column 2 to column 9)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 17, column 2 to column 12)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 18, column 2 to column 22)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 29, column 2 to column 172)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 31, column 2 to column 151)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 25, column 2 to column 25)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 26, column 2 to column 135)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 2, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 3, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 4, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 4, column 2 to column 25)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 5, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 5, column 2 to column 26)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 6, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 6, column 2 to column 30)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 7, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 7, column 2 to column 26)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 9, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 9, column 2 to column 14)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/max_model.stan', line 31, column 8 to column 9)"};
 
 
-template <typename RNG>
-std::vector<int>
-permutation_rng(const int& N, RNG& base_rng__, std::ostream* pstream__) {
-  using local_scalar_t__ = double;
-  int current_statement__ = 0; 
-  static constexpr bool propto__ = true;
-  (void) propto__;
-  local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
-  (void) DUMMY_VAR__;  // suppress unused var warning
-  try {
-    current_statement__ = 43;
-    validate_non_negative_index("y", "N", N);
-    std::vector<int> y;
-    y = std::vector<int>(N, std::numeric_limits<int>::min());
-    
-    current_statement__ = 47;
-    for (int n = 1; n <= N; ++n) {
-      current_statement__ = 45;
-      assign(y, n, "assigning variable y", index_uni(n));
-    }
-    current_statement__ = 48;
-    validate_non_negative_index("theta", "N", N);
-    Eigen::Matrix<local_scalar_t__, -1, 1> theta;
-    theta = Eigen::Matrix<local_scalar_t__, -1, 1>(N);
-    stan::math::fill(theta, DUMMY_VAR__);
-    
-    current_statement__ = 49;
-    assign(theta, rep_vector((1.0 / N), N), "assigning variable theta");
-    current_statement__ = 56;
-    for (int n = 1; n <= N; ++n) {
-      int i;
-      i = std::numeric_limits<int>::min();
-      
-      current_statement__ = 50;
-      i = categorical_rng(theta, base_rng__);
-      current_statement__ = 51;
-      validate_non_negative_index("temp", "n", n);
-      std::vector<int> temp;
-      temp = std::vector<int>(n, std::numeric_limits<int>::min());
-      
-      current_statement__ = 52;
-      assign(temp, y, "assigning variable temp");
-      current_statement__ = 53;
-      assign(y, rvalue(y, "y", index_uni(i)),
-        "assigning variable y", index_uni(n));
-      current_statement__ = 54;
-      assign(y, rvalue(temp, "temp", index_uni(n)),
-        "assigning variable y", index_uni(i));
-    }
-    current_statement__ = 57;
-    return y;
-  } catch (const std::exception& e) {
-    stan::lang::rethrow_located(e, locations_array__[current_statement__]);
-  }
-  
-}
-
-struct permutation_rng_functor__ {
-template <typename RNG>
-std::vector<int>
-operator()(const int& N, RNG& base_rng__, std::ostream* pstream__)  const 
-{
-return permutation_rng(N, base_rng__, pstream__);
-}
-};
 
 class max_model_model final : public model_base_crtp<max_model_model> {
 
  private:
   int N;
-  int N_test;
+  int M;
   Eigen::Matrix<double, -1, 1> num_build500__;
   Eigen::Matrix<double, -1, 1> mean_fa_ratio__;
   Eigen::Matrix<double, -1, 1> min_distance_park__;
   Eigen::Matrix<double, -1, 1> num_trees_50m__;
-  Eigen::Matrix<double, -1, 1> y__;
-  int N_train;
-  std::vector<int> permutation;
-  Eigen::Matrix<double, -1, 1> num_build500_val__;
-  Eigen::Matrix<double, -1, 1> mean_fa_ratio_val__;
-  Eigen::Matrix<double, -1, 1> min_distance_park_val__;
-  Eigen::Matrix<double, -1, 1> num_trees_50m_val__;
-  Eigen::Matrix<double, -1, 1> y_val__;
-  Eigen::Matrix<double, -1, 1> num_build500_train__;
-  Eigen::Matrix<double, -1, 1> mean_fa_ratio_train__;
-  Eigen::Matrix<double, -1, 1> min_distance_park_train__;
-  Eigen::Matrix<double, -1, 1> num_trees_50m_train__;
-  Eigen::Matrix<double, -1, 1> y_train__; 
+  Eigen::Matrix<double, -1, 1> y__; 
   Eigen::Map<Eigen::Matrix<double, -1, 1>> num_build500{nullptr, 0};
   Eigen::Map<Eigen::Matrix<double, -1, 1>> mean_fa_ratio{nullptr, 0};
   Eigen::Map<Eigen::Matrix<double, -1, 1>> min_distance_park{nullptr, 0};
   Eigen::Map<Eigen::Matrix<double, -1, 1>> num_trees_50m{nullptr, 0};
   Eigen::Map<Eigen::Matrix<double, -1, 1>> y{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> num_build500_val{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> mean_fa_ratio_val{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> min_distance_park_val{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> num_trees_50m_val{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> y_val{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> num_build500_train{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> mean_fa_ratio_train{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> min_distance_park_train{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> num_trees_50m_train{nullptr, 0};
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> y_train{nullptr, 0};
  
  public:
   ~max_model_model() { }
@@ -210,27 +88,27 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       pos__ = std::numeric_limits<int>::min();
       
       pos__ = 1;
-      current_statement__ = 8;
+      current_statement__ = 11;
       context__.validate_dims("data initialization","N","int",
            std::vector<size_t>{});
       N = std::numeric_limits<int>::min();
       
-      current_statement__ = 8;
-      N = context__.vals_i("N")[(1 - 1)];
-      current_statement__ = 8;
-      check_greater_or_equal(function__, "N", N, 0);
-      current_statement__ = 9;
-      context__.validate_dims("data initialization","N_test","int",
-           std::vector<size_t>{});
-      N_test = std::numeric_limits<int>::min();
-      
-      current_statement__ = 9;
-      N_test = context__.vals_i("N_test")[(1 - 1)];
-      current_statement__ = 9;
-      check_greater_or_equal(function__, "N_test", N_test, 0);
-      current_statement__ = 10;
-      validate_non_negative_index("num_build500", "N", N);
       current_statement__ = 11;
+      N = context__.vals_i("N")[(1 - 1)];
+      current_statement__ = 11;
+      check_greater_or_equal(function__, "N", N, 0);
+      current_statement__ = 12;
+      context__.validate_dims("data initialization","M","int",
+           std::vector<size_t>{});
+      M = std::numeric_limits<int>::min();
+      
+      current_statement__ = 12;
+      M = context__.vals_i("M")[(1 - 1)];
+      current_statement__ = 12;
+      check_greater_or_equal(function__, "M", M, 0);
+      current_statement__ = 13;
+      validate_non_negative_index("num_build500", "N", N);
+      current_statement__ = 14;
       context__.validate_dims("data initialization","num_build500","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       num_build500__ = Eigen::Matrix<double, -1, 1>(N);
@@ -239,22 +117,22 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       
       {
         std::vector<local_scalar_t__> num_build500_flat__;
-        current_statement__ = 11;
+        current_statement__ = 14;
         num_build500_flat__ = context__.vals_r("num_build500");
-        current_statement__ = 11;
+        current_statement__ = 14;
         pos__ = 1;
-        current_statement__ = 11;
+        current_statement__ = 14;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 11;
+          current_statement__ = 14;
           assign(num_build500, num_build500_flat__[(pos__ - 1)],
             "assigning variable num_build500", index_uni(sym1__));
-          current_statement__ = 11;
+          current_statement__ = 14;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 12;
+      current_statement__ = 15;
       validate_non_negative_index("mean_fa_ratio", "N", N);
-      current_statement__ = 13;
+      current_statement__ = 16;
       context__.validate_dims("data initialization","mean_fa_ratio","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       mean_fa_ratio__ = Eigen::Matrix<double, -1, 1>(N);
@@ -263,22 +141,22 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       
       {
         std::vector<local_scalar_t__> mean_fa_ratio_flat__;
-        current_statement__ = 13;
+        current_statement__ = 16;
         mean_fa_ratio_flat__ = context__.vals_r("mean_fa_ratio");
-        current_statement__ = 13;
+        current_statement__ = 16;
         pos__ = 1;
-        current_statement__ = 13;
+        current_statement__ = 16;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 13;
+          current_statement__ = 16;
           assign(mean_fa_ratio, mean_fa_ratio_flat__[(pos__ - 1)],
             "assigning variable mean_fa_ratio", index_uni(sym1__));
-          current_statement__ = 13;
+          current_statement__ = 16;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 14;
+      current_statement__ = 17;
       validate_non_negative_index("min_distance_park", "N", N);
-      current_statement__ = 15;
+      current_statement__ = 18;
       context__.validate_dims("data initialization","min_distance_park",
           "double", std::vector<size_t>{static_cast<size_t>(N)});
       min_distance_park__ = Eigen::Matrix<double, -1, 1>(N);
@@ -287,22 +165,22 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       
       {
         std::vector<local_scalar_t__> min_distance_park_flat__;
-        current_statement__ = 15;
+        current_statement__ = 18;
         min_distance_park_flat__ = context__.vals_r("min_distance_park");
-        current_statement__ = 15;
+        current_statement__ = 18;
         pos__ = 1;
-        current_statement__ = 15;
+        current_statement__ = 18;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 15;
+          current_statement__ = 18;
           assign(min_distance_park, min_distance_park_flat__[(pos__ - 1)],
             "assigning variable min_distance_park", index_uni(sym1__));
-          current_statement__ = 15;
+          current_statement__ = 18;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 16;
+      current_statement__ = 19;
       validate_non_negative_index("num_trees_50m", "N", N);
-      current_statement__ = 17;
+      current_statement__ = 20;
       context__.validate_dims("data initialization","num_trees_50m","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       num_trees_50m__ = Eigen::Matrix<double, -1, 1>(N);
@@ -311,22 +189,22 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       
       {
         std::vector<local_scalar_t__> num_trees_50m_flat__;
-        current_statement__ = 17;
+        current_statement__ = 20;
         num_trees_50m_flat__ = context__.vals_r("num_trees_50m");
-        current_statement__ = 17;
+        current_statement__ = 20;
         pos__ = 1;
-        current_statement__ = 17;
+        current_statement__ = 20;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 17;
+          current_statement__ = 20;
           assign(num_trees_50m, num_trees_50m_flat__[(pos__ - 1)],
             "assigning variable num_trees_50m", index_uni(sym1__));
-          current_statement__ = 17;
+          current_statement__ = 20;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 18;
+      current_statement__ = 21;
       validate_non_negative_index("y", "N", N);
-      current_statement__ = 19;
+      current_statement__ = 22;
       context__.validate_dims("data initialization","y","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       y__ = Eigen::Matrix<double, -1, 1>(N);
@@ -334,171 +212,21 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       
       {
         std::vector<local_scalar_t__> y_flat__;
-        current_statement__ = 19;
+        current_statement__ = 22;
         y_flat__ = context__.vals_r("y");
-        current_statement__ = 19;
+        current_statement__ = 22;
         pos__ = 1;
-        current_statement__ = 19;
+        current_statement__ = 22;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 19;
+          current_statement__ = 22;
           assign(y, y_flat__[(pos__ - 1)],
             "assigning variable y", index_uni(sym1__));
-          current_statement__ = 19;
+          current_statement__ = 22;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 20;
-      N_train = std::numeric_limits<int>::min();
-      
-      current_statement__ = 20;
-      N_train = (N - N_test);
-      current_statement__ = 21;
-      validate_non_negative_index("permutation", "N", N);
-      current_statement__ = 22;
-      permutation = std::vector<int>(N, std::numeric_limits<int>::min());
-      
-      current_statement__ = 22;
-      assign(permutation, permutation_rng(N, base_rng__, pstream__),
-        "assigning variable permutation");
       current_statement__ = 23;
-      validate_non_negative_index("num_build500_val", "N_test", N_test);
-      current_statement__ = 24;
-      num_build500_val__ = Eigen::Matrix<double, -1, 1>(N_test);
-      new (&num_build500_val) Eigen::Map<Eigen::Matrix<double, -1, 1>>(num_build500_val__.data(), N_test);
-      stan::math::fill(num_build500_val, std::numeric_limits<double>::quiet_NaN());
-      
-      
-      current_statement__ = 24;
-      assign(num_build500_val,
-        rvalue(num_build500, "num_build500",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max((N_train + 1), N)))),
-        "assigning variable num_build500_val");
-      current_statement__ = 25;
-      validate_non_negative_index("mean_fa_ratio_val", "N_test", N_test);
-      current_statement__ = 26;
-      mean_fa_ratio_val__ = Eigen::Matrix<double, -1, 1>(N_test);
-      new (&mean_fa_ratio_val) Eigen::Map<Eigen::Matrix<double, -1, 1>>(mean_fa_ratio_val__.data(), N_test);
-      stan::math::fill(mean_fa_ratio_val, std::numeric_limits<double>::quiet_NaN());
-      
-      
-      current_statement__ = 26;
-      assign(mean_fa_ratio_val,
-        rvalue(mean_fa_ratio, "mean_fa_ratio",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max((N_train + 1), N)))),
-        "assigning variable mean_fa_ratio_val");
-      current_statement__ = 27;
-      validate_non_negative_index("min_distance_park_val", "N_test", N_test);
-      current_statement__ = 28;
-      min_distance_park_val__ = Eigen::Matrix<double, -1, 1>(N_test);
-      new (&min_distance_park_val) Eigen::Map<Eigen::Matrix<double, -1, 1>>(min_distance_park_val__.data(), N_test);
-      stan::math::fill(min_distance_park_val, std::numeric_limits<double>::quiet_NaN());
-      
-      
-      current_statement__ = 28;
-      assign(min_distance_park_val,
-        rvalue(min_distance_park, "min_distance_park",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max((N_train + 1), N)))),
-        "assigning variable min_distance_park_val");
-      current_statement__ = 29;
-      validate_non_negative_index("num_trees_50m_val", "N_test", N_test);
-      current_statement__ = 30;
-      num_trees_50m_val__ = Eigen::Matrix<double, -1, 1>(N_test);
-      new (&num_trees_50m_val) Eigen::Map<Eigen::Matrix<double, -1, 1>>(num_trees_50m_val__.data(), N_test);
-      stan::math::fill(num_trees_50m_val, std::numeric_limits<double>::quiet_NaN());
-      
-      
-      current_statement__ = 30;
-      assign(num_trees_50m_val,
-        rvalue(num_trees_50m, "num_trees_50m",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max((N_train + 1), N)))),
-        "assigning variable num_trees_50m_val");
-      current_statement__ = 31;
-      validate_non_negative_index("y_val", "N_test", N_test);
-      current_statement__ = 32;
-      y_val__ = Eigen::Matrix<double, -1, 1>(N_test);
-      new (&y_val) Eigen::Map<Eigen::Matrix<double, -1, 1>>(y_val__.data(), N_test);
-      stan::math::fill(y_val, std::numeric_limits<double>::quiet_NaN());
-      
-      current_statement__ = 32;
-      assign(y_val,
-        rvalue(y, "y",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max((N_train + 1), N)))),
-        "assigning variable y_val");
-      current_statement__ = 33;
-      validate_non_negative_index("num_build500_train", "N_train", N_train);
-      current_statement__ = 34;
-      num_build500_train__ = Eigen::Matrix<double, -1, 1>(N_train);
-      new (&num_build500_train) Eigen::Map<Eigen::Matrix<double, -1, 1>>(num_build500_train__.data(), N_train);
-      stan::math::fill(num_build500_train, std::numeric_limits<double>::quiet_NaN());
-      
-      
-      current_statement__ = 34;
-      assign(num_build500_train,
-        rvalue(num_build500, "num_build500",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max(1, N_train)))),
-        "assigning variable num_build500_train");
-      current_statement__ = 35;
-      validate_non_negative_index("mean_fa_ratio_train", "N_train", N_train);
-      current_statement__ = 36;
-      mean_fa_ratio_train__ = Eigen::Matrix<double, -1, 1>(N_train);
-      new (&mean_fa_ratio_train) Eigen::Map<Eigen::Matrix<double, -1, 1>>(mean_fa_ratio_train__.data(), N_train);
-      stan::math::fill(mean_fa_ratio_train, std::numeric_limits<double>::quiet_NaN());
-      
-      
-      current_statement__ = 36;
-      assign(mean_fa_ratio_train,
-        rvalue(mean_fa_ratio, "mean_fa_ratio",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max(1, N_train)))),
-        "assigning variable mean_fa_ratio_train");
-      current_statement__ = 37;
-      validate_non_negative_index("min_distance_park_train", "N_train",
-                                  N_train);
-      current_statement__ = 38;
-      min_distance_park_train__ = Eigen::Matrix<double, -1, 1>(N_train);
-      new (&min_distance_park_train) Eigen::Map<Eigen::Matrix<double, -1, 1>>(min_distance_park_train__.data(), N_train);
-      stan::math::fill(min_distance_park_train, std::numeric_limits<double>::quiet_NaN());
-      
-      
-      current_statement__ = 38;
-      assign(min_distance_park_train,
-        rvalue(min_distance_park, "min_distance_park",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max(1, N_train)))),
-        "assigning variable min_distance_park_train");
-      current_statement__ = 39;
-      validate_non_negative_index("num_trees_50m_train", "N_train", N_train);
-      current_statement__ = 40;
-      num_trees_50m_train__ = Eigen::Matrix<double, -1, 1>(N_train);
-      new (&num_trees_50m_train) Eigen::Map<Eigen::Matrix<double, -1, 1>>(num_trees_50m_train__.data(), N_train);
-      stan::math::fill(num_trees_50m_train, std::numeric_limits<double>::quiet_NaN());
-      
-      
-      current_statement__ = 40;
-      assign(num_trees_50m_train,
-        rvalue(num_trees_50m, "num_trees_50m",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max(1, N_train)))),
-        "assigning variable num_trees_50m_train");
-      current_statement__ = 41;
-      validate_non_negative_index("y_train", "N_train", N_train);
-      current_statement__ = 42;
-      y_train__ = Eigen::Matrix<double, -1, 1>(N_train);
-      new (&y_train) Eigen::Map<Eigen::Matrix<double, -1, 1>>(y_train__.data(), N_train);
-      stan::math::fill(y_train, std::numeric_limits<double>::quiet_NaN());
-      
-      current_statement__ = 42;
-      assign(y_train,
-        rvalue(y, "y",
-          index_multi(rvalue(permutation, "permutation",
-                        index_min_max(1, N_train)))),
-        "assigning variable y_train");
+      validate_non_negative_index("y_rep", "M", M);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -556,16 +284,27 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       sigma = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
                 0, lp__);
       {
-        current_statement__ = 7;
+        current_statement__ = 9;
+        lp_accum__.add(inv_gamma_lpdf<propto__>(sigma, 1, 1));
+        current_statement__ = 10;
         lp_accum__.add(
-          normal_lpdf<propto__>(y_train,
+          normal_lpdf<propto__>(rvalue(y, "y", index_min_max(1, M)),
             add(
               add(
                 add(
-                  add(multiply(a, num_build500_train),
-                    multiply(b, mean_fa_ratio_train)),
-                  multiply(c, min_distance_park_train)),
-                multiply(d, num_trees_50m_train)), bias), sigma));
+                  add(
+                    multiply(a,
+                      rvalue(num_build500, "num_build500",
+                        index_min_max(1, M))),
+                    multiply(b,
+                      rvalue(mean_fa_ratio, "mean_fa_ratio",
+                        index_min_max(1, M)))),
+                  multiply(c,
+                    rvalue(min_distance_park, "min_distance_park",
+                      index_min_max(1, M)))),
+                multiply(d,
+                  rvalue(num_trees_50m, "num_trees_50m", index_min_max(1, M)))),
+              bias), sigma));
       }
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -643,6 +382,51 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       if (logical_negation(emit_generated_quantities__)) {
         return ;
       } 
+      double log_p;
+      log_p = std::numeric_limits<double>::quiet_NaN();
+      
+      current_statement__ = 7;
+      log_p = normal_lpdf<false>(rvalue(y, "y", index_min_max((M + 1), N)),
+                add(
+                  add(
+                    add(
+                      add(
+                        multiply(a,
+                          rvalue(num_build500, "num_build500",
+                            index_min_max((M + 1), N))),
+                        multiply(b,
+                          rvalue(mean_fa_ratio, "mean_fa_ratio",
+                            index_min_max((M + 1), N)))),
+                      multiply(c,
+                        rvalue(min_distance_park, "min_distance_park",
+                          index_min_max((M + 1), N)))),
+                    multiply(d,
+                      rvalue(num_trees_50m, "num_trees_50m",
+                        index_min_max((M + 1), N)))), bias), sigma);
+      std::vector<double> y_rep;
+      y_rep = std::vector<double>(M, std::numeric_limits<double>::quiet_NaN());
+      
+      
+      current_statement__ = 8;
+      assign(y_rep,
+        normal_rng(
+          add(
+            add(
+              add(
+                add(
+                  multiply(a,
+                    rvalue(num_build500, "num_build500", index_min_max(1, M))),
+                  multiply(b,
+                    rvalue(mean_fa_ratio, "mean_fa_ratio",
+                      index_min_max(1, M)))),
+                multiply(c,
+                  rvalue(min_distance_park, "min_distance_park",
+                    index_min_max(1, M)))),
+              multiply(d,
+                rvalue(num_trees_50m, "num_trees_50m", index_min_max(1, M)))),
+            bias), sigma, base_rng__), "assigning variable y_rep");
+      out__.write(log_p);
+      out__.write(y_rep);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -702,7 +486,8 @@ class max_model_model final : public model_base_crtp<max_model_model> {
     
   inline void get_param_names(std::vector<std::string>& names__) const {
     
-    names__ = std::vector<std::string>{"a", "b", "c", "d", "bias", "sigma"};
+    names__ = std::vector<std::string>{"a", "b", "c", "d", "bias", "sigma",
+      "log_p", "y_rep"};
     
     } // get_param_names() 
     
@@ -710,7 +495,8 @@ class max_model_model final : public model_base_crtp<max_model_model> {
     
     dimss__ = std::vector<std::vector<size_t>>{std::vector<size_t>{},
       std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
-      }, std::vector<size_t>{}, std::vector<size_t>{}};
+      }, std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
+      }, std::vector<size_t>{static_cast<size_t>(M)}};
     
     } // get_dims() 
     
@@ -731,7 +517,12 @@ class max_model_model final : public model_base_crtp<max_model_model> {
     }
     
     if (emit_generated_quantities__) {
-      
+      param_names__.emplace_back(std::string() + "log_p");
+      for (int sym1__ = 1; sym1__ <= M; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "y_rep" + '.' + std::to_string(sym1__));
+        } 
+      }
     }
     
     } // constrained_param_names() 
@@ -753,20 +544,25 @@ class max_model_model final : public model_base_crtp<max_model_model> {
     }
     
     if (emit_generated_quantities__) {
-      
+      param_names__.emplace_back(std::string() + "log_p");
+      for (int sym1__ = 1; sym1__ <= M; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "y_rep" + '.' + std::to_string(sym1__));
+        } 
+      }
     }
     
     } // unconstrained_param_names() 
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"a\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"b\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"d\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"bias\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"}]");
+    return std::string("[{\"name\":\"a\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"b\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"d\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"bias\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"log_p\",\"type\":{\"name\":\"real\"},\"block\":\"generated_quantities\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"a\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"b\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"d\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"bias\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"}]");
+    return std::string("[{\"name\":\"a\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"b\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"c\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"d\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"bias\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"log_p\",\"type\":{\"name\":\"real\"},\"block\":\"generated_quantities\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -782,7 +578,8 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       const size_t num_params__ = 
   (((((1 + 1) + 1) + 1) + 1) + 1);
       const size_t num_transformed = 0;
-      const size_t num_gen_quantities = 0;
+      const size_t num_gen_quantities = 
+  (1 + M);
       std::vector<double> vars_vec(num_params__
        + (emit_transformed_parameters * num_transformed)
        + (emit_generated_quantities * num_gen_quantities));
@@ -803,7 +600,8 @@ class max_model_model final : public model_base_crtp<max_model_model> {
       const size_t num_params__ = 
   (((((1 + 1) + 1) + 1) + 1) + 1);
       const size_t num_transformed = 0;
-      const size_t num_gen_quantities = 0;
+      const size_t num_gen_quantities = 
+  (1 + M);
       vars.resize(num_params__
         + (emit_transformed_parameters * num_transformed)
         + (emit_generated_quantities * num_gen_quantities));

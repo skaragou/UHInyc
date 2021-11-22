@@ -1,48 +1,19 @@
-functions {
-  array[] int permutation_rng(int N) {
-     array[N] int y;
-     for (n in 1:N) {
-       y[n] = n;
-     }
-     vector[N] theta = rep_vector(1.0 / N, N);
-     for (n in 1:N) {
-      int i = categorical_rng(theta);
-      array[n] int temp = y;
-      y[n] = y[i];
-      y[i] = temp[n];
-     }
-     return y;
-  }
-}
 data {
   int<lower=0> N;
-  int<lower=0> N_test;    // number of data items
-  vector[N] num_build500;      // outcome vector
-  vector[N] mean_fa_ratio;      // outcome vector
-  vector[N] min_distance_park;      // outcome vector
-  vector[N] num_trees_50m;      // outcome vector
-  vector[N] y;      // outcome vector
-}
-transformed data{
-  int N_train = N - N_test;
-  int permutation[N] = permutation_rng(N);
-  vector[N_test] num_build500_val = num_build500[permutation[N_train + 1 : N]];      // outcome vector
-  vector[N_test] mean_fa_ratio_val = mean_fa_ratio[permutation[N_train + 1 : N]];      // outcome vector
-  vector[N_test] min_distance_park_val = min_distance_park[permutation[N_train + 1 : N]];      // outcome vector
-  vector[N_test] num_trees_50m_val = num_trees_50m[permutation[N_train + 1 : N]];      // outcome vector
-  vector[N_test] y_val = y[permutation[N_train + 1 : N]]; 
-
-  vector[N_train] num_build500_train = num_build500[permutation[1 : N_train]];      // outcome vector
-  vector[N_train] mean_fa_ratio_train = mean_fa_ratio[permutation[1 : N_train]];      // outcome vector
-  vector[N_train] min_distance_park_train = min_distance_park[permutation[1 : N_train]];      // outcome vector
-  vector[N_train] num_trees_50m_train = num_trees_50m[permutation[1 : N_train]];      // outcome vector
-  vector[N_train] y_train = y[permutation[1 : N_train]]; 
+  int<lower=0> M;
+  vector[N] num_build500;      
+  vector[N] mean_fa_ratio;
+  vector[N] min_distance_park;
+  vector[N] num_trees_50m;
+  // vector[N] hour;
+  vector[N] y;
 }
 parameters {
   real a;
   real b;
   real c;
   real d;
+  // real f;
   real bias;
   real<lower=0> sigma;  // error scale
 }
@@ -51,9 +22,11 @@ model {
   // b ~ beta(1,1);
   // c ~ beta(1,1);
   // d ~ beta(1,1);
-  // sigma ~ inv_gamma(1,1);
-  y_train ~ normal(a * num_build500_train + b * mean_fa_ratio_train + c * min_distance_park_train + d * num_trees_50m_train + bias, sigma); 
+  sigma ~ inv_gamma(1,1);
+  y[1:M] ~ normal(a * num_build500[1:M] + b * mean_fa_ratio[1:M] + c * min_distance_park[1:M] + d * num_trees_50m[1:M] +  bias, sigma); 
+} 
+generated quantities {
+  real log_p = normal_lpdf(y[M + 1:N] | a * num_build500[M + 1:N] + b * mean_fa_ratio[M + 1:N] + c * min_distance_park[M + 1:N] + d * num_trees_50m[M + 1:N] + bias, sigma);
+  // array[N - M] real y_rep = normal_rng(a * num_build500[M + 1:N] + b * mean_fa_ratio[M + 1:N] + c * min_distance_park[M + 1:N] + d * num_trees_50m[M + 1:N] + f * hour[M + 1:N]+ bias, sigma);
+  array[M] real y_rep = normal_rng(a * num_build500[1:M] + b * mean_fa_ratio[1:M] + c * min_distance_park[1:M] + d * num_trees_50m[1:M] + bias, sigma);
 }
-// generated quantities {
-//   real log_p = normal_lpdf(y_val | a * num_build500_val + b * mean_fa_ratio_val + c * min_distance_park_val + d * num_trees_50m_val + bias, sigma);
-// }

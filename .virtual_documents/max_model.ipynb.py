@@ -26,9 +26,6 @@ temps = temps.groupby(['Latitude','Longitude','Day','Year']).agg({'AirTemp':np.m
 data = temps.merge(covariates, how='outer', on=['Latitude','Longitude'])
 
 
-j = data.to_json(orient='columns')
-
-
 N = data.shape[0]
 X_new_size = 5000
 X_size = N - X_new_size

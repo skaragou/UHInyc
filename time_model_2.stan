@@ -24,8 +24,8 @@ parameters {
 }
 transformed parameters{
   matrix[H, K] beta;
-  cov_matrix[H] Sigma;
-  Sigma = gp_exp_quad_cov(y_cov, 1,1);
+  // cov_matrix[H] Sigma;
+  // Sigma = gp_exp_quad_cov(y_cov, 1,1);
   
   row_vector[K] tmp;
   beta[1, ] = beta_mean + beta_sd .* beta_raw[1, ]; 
@@ -36,17 +36,19 @@ transformed parameters{
   }
 }
 model {
-  sigma_b ~ normal(0, 1);
+  sigma_b ~ normal(0,1);
+  sigma_y ~ normal(0,1);
   to_vector(beta_raw) ~ normal(0, 1);
 
   for (i in 1:M) {
-    y_t[i,:] ~ multi_normal(beta * X_t[i,:],Sigma);
+    y_t[i,:] ~ normal(beta * X_t[i,:],sigma_y);
   }
 } 
 generated quantities {
 
-  vector[H] y_rep[M];
+  // vector[H] y_rep[M];
+  real y_rep[M,H];
   for (i in 1:M) {
-    y_rep[i,:] = multi_normal_rng(beta * X_t[i,:],Sigma);
+    y_rep[i,:] = normal_rng(beta * X_t[i,:],sigma_y);
   }
 }

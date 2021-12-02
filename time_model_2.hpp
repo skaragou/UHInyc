@@ -17,29 +17,28 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 55> locations_array__ = 
+static constexpr std::array<const char*, 53> locations_array__ = 
 {" (found before start of program)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 21, column 2 to column 24)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 22, column 2 to column 27)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 23, column 2 to column 24)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 26, column 2 to column 20)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 27, column 2 to column 22)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 30, column 2 to column 20)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 28, column 2 to column 38)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 31, column 2 to column 51)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 34, column 4 to column 23)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 35, column 4 to column 60)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 33, column 16 to line 36, column 3)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 33, column 2 to line 36, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 48, column 2 to column 21)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 50, column 4 to column 57)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 49, column 17 to line 51, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 49, column 2 to line 51, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 39, column 2 to column 25)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 40, column 2 to column 37)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 43, column 4 to column 51)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 42, column 17 to line 44, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 42, column 2 to line 44, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 50, column 2 to column 18)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 52, column 4 to column 53)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 51, column 17 to line 53, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 51, column 2 to line 53, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 39, column 2 to column 24)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 40, column 2 to column 24)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 41, column 2 to column 37)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 44, column 4 to column 47)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 43, column 17 to line 45, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 43, column 2 to line 45, column 3)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 2, column 2 to column 17)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 3, column 2 to column 17)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 4, column 2 to column 17)",
@@ -69,10 +68,9 @@ static constexpr std::array<const char*, 55> locations_array__ =
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 22, column 24 to column 25)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 26, column 9 to column 10)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 26, column 12 to column 13)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 27, column 13 to column 14)",
  " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 30, column 13 to column 14)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 48, column 18 to column 19)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 48, column 9 to column 10)"};
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 50, column 13 to column 14)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 50, column 15 to column 16)"};
 
 
 
@@ -121,47 +119,47 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       pos__ = std::numeric_limits<int>::min();
       
       pos__ = 1;
-      current_statement__ = 22;
+      current_statement__ = 21;
       context__.validate_dims("data initialization","N","int",
            std::vector<size_t>{});
       N = std::numeric_limits<int>::min();
       
-      current_statement__ = 22;
+      current_statement__ = 21;
       N = context__.vals_i("N")[(1 - 1)];
-      current_statement__ = 22;
+      current_statement__ = 21;
       check_greater_or_equal(function__, "N", N, 0);
-      current_statement__ = 23;
+      current_statement__ = 22;
       context__.validate_dims("data initialization","M","int",
            std::vector<size_t>{});
       M = std::numeric_limits<int>::min();
       
-      current_statement__ = 23;
+      current_statement__ = 22;
       M = context__.vals_i("M")[(1 - 1)];
-      current_statement__ = 23;
+      current_statement__ = 22;
       check_greater_or_equal(function__, "M", M, 0);
-      current_statement__ = 24;
+      current_statement__ = 23;
       context__.validate_dims("data initialization","H","int",
            std::vector<size_t>{});
       H = std::numeric_limits<int>::min();
       
-      current_statement__ = 24;
+      current_statement__ = 23;
       H = context__.vals_i("H")[(1 - 1)];
-      current_statement__ = 24;
+      current_statement__ = 23;
       check_greater_or_equal(function__, "H", H, 0);
-      current_statement__ = 25;
+      current_statement__ = 24;
       context__.validate_dims("data initialization","K","int",
            std::vector<size_t>{});
       K = std::numeric_limits<int>::min();
       
-      current_statement__ = 25;
+      current_statement__ = 24;
       K = context__.vals_i("K")[(1 - 1)];
-      current_statement__ = 25;
+      current_statement__ = 24;
       check_greater_or_equal(function__, "K", K, 0);
-      current_statement__ = 26;
+      current_statement__ = 25;
       validate_non_negative_index("X", "N", N);
-      current_statement__ = 27;
+      current_statement__ = 26;
       validate_non_negative_index("X", "K", K);
-      current_statement__ = 28;
+      current_statement__ = 27;
       context__.validate_dims("data initialization","X","double",
            std::vector<size_t>{static_cast<size_t>(N),
             static_cast<size_t>(K)});
@@ -170,27 +168,27 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       
       {
         std::vector<local_scalar_t__> X_flat__;
-        current_statement__ = 28;
+        current_statement__ = 27;
         X_flat__ = context__.vals_r("X");
-        current_statement__ = 28;
+        current_statement__ = 27;
         pos__ = 1;
-        current_statement__ = 28;
+        current_statement__ = 27;
         for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
-          current_statement__ = 28;
+          current_statement__ = 27;
           for (int sym2__ = 1; sym2__ <= N; ++sym2__) {
-            current_statement__ = 28;
+            current_statement__ = 27;
             assign(X, X_flat__[(pos__ - 1)],
               "assigning variable X", index_uni(sym2__), index_uni(sym1__));
-            current_statement__ = 28;
+            current_statement__ = 27;
             pos__ = (pos__ + 1);
           }
         }
       }
-      current_statement__ = 29;
+      current_statement__ = 28;
       validate_non_negative_index("y", "N", N);
-      current_statement__ = 30;
+      current_statement__ = 29;
       validate_non_negative_index("y", "H", H);
-      current_statement__ = 31;
+      current_statement__ = 30;
       context__.validate_dims("data initialization","y","double",
            std::vector<size_t>{static_cast<size_t>(N),
             static_cast<size_t>(H)});
@@ -199,27 +197,27 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       
       {
         std::vector<local_scalar_t__> y_flat__;
-        current_statement__ = 31;
+        current_statement__ = 30;
         y_flat__ = context__.vals_r("y");
-        current_statement__ = 31;
+        current_statement__ = 30;
         pos__ = 1;
-        current_statement__ = 31;
+        current_statement__ = 30;
         for (int sym1__ = 1; sym1__ <= H; ++sym1__) {
-          current_statement__ = 31;
+          current_statement__ = 30;
           for (int sym2__ = 1; sym2__ <= N; ++sym2__) {
-            current_statement__ = 31;
+            current_statement__ = 30;
             assign(y, y_flat__[(pos__ - 1)],
               "assigning variable y", index_uni(sym2__), index_uni(sym1__));
-            current_statement__ = 31;
+            current_statement__ = 30;
             pos__ = (pos__ + 1);
           }
         }
       }
-      current_statement__ = 32;
+      current_statement__ = 31;
       validate_non_negative_index("y_cov", "H", H);
-      current_statement__ = 33;
+      current_statement__ = 32;
       validate_non_negative_index("y_cov", "M", M);
-      current_statement__ = 34;
+      current_statement__ = 33;
       context__.validate_dims("data initialization","y_cov","double",
            std::vector<size_t>{static_cast<size_t>(H),
             static_cast<size_t>(M)});
@@ -228,26 +226,26 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       
       {
         std::vector<local_scalar_t__> y_cov_flat__;
-        current_statement__ = 34;
+        current_statement__ = 33;
         y_cov_flat__ = context__.vals_r("y_cov");
-        current_statement__ = 34;
+        current_statement__ = 33;
         pos__ = 1;
-        current_statement__ = 34;
+        current_statement__ = 33;
         for (int sym1__ = 1; sym1__ <= M; ++sym1__) {
-          current_statement__ = 34;
+          current_statement__ = 33;
           for (int sym2__ = 1; sym2__ <= H; ++sym2__) {
-            current_statement__ = 34;
+            current_statement__ = 33;
             assign(y_cov, y_cov_flat__[(pos__ - 1)],
               "assigning variable y_cov", index_uni(sym2__),
                                             index_uni(sym1__));
-            current_statement__ = 34;
+            current_statement__ = 33;
             pos__ = (pos__ + 1);
           }
         }
       }
-      current_statement__ = 35;
+      current_statement__ = 34;
       validate_non_negative_index("beta_mean", "K", K);
-      current_statement__ = 36;
+      current_statement__ = 35;
       context__.validate_dims("data initialization","beta_mean","double",
            std::vector<size_t>{static_cast<size_t>(K)});
       beta_mean__ = Eigen::Matrix<double, 1, -1>(K);
@@ -256,22 +254,22 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       
       {
         std::vector<local_scalar_t__> beta_mean_flat__;
-        current_statement__ = 36;
+        current_statement__ = 35;
         beta_mean_flat__ = context__.vals_r("beta_mean");
-        current_statement__ = 36;
+        current_statement__ = 35;
         pos__ = 1;
-        current_statement__ = 36;
+        current_statement__ = 35;
         for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
-          current_statement__ = 36;
+          current_statement__ = 35;
           assign(beta_mean, beta_mean_flat__[(pos__ - 1)],
             "assigning variable beta_mean", index_uni(sym1__));
-          current_statement__ = 36;
+          current_statement__ = 35;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 37;
+      current_statement__ = 36;
       validate_non_negative_index("beta_sd", "K", K);
-      current_statement__ = 38;
+      current_statement__ = 37;
       context__.validate_dims("data initialization","beta_sd","double",
            std::vector<size_t>{static_cast<size_t>(K)});
       beta_sd__ = Eigen::Matrix<double, 1, -1>(K);
@@ -280,65 +278,61 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       
       {
         std::vector<local_scalar_t__> beta_sd_flat__;
-        current_statement__ = 38;
+        current_statement__ = 37;
         beta_sd_flat__ = context__.vals_r("beta_sd");
-        current_statement__ = 38;
+        current_statement__ = 37;
         pos__ = 1;
-        current_statement__ = 38;
+        current_statement__ = 37;
         for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
-          current_statement__ = 38;
+          current_statement__ = 37;
           assign(beta_sd, beta_sd_flat__[(pos__ - 1)],
             "assigning variable beta_sd", index_uni(sym1__));
-          current_statement__ = 38;
+          current_statement__ = 37;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 39;
+      current_statement__ = 38;
       T = std::numeric_limits<int>::min();
       
-      current_statement__ = 39;
+      current_statement__ = 38;
       T = (N - M);
-      current_statement__ = 40;
+      current_statement__ = 39;
       validate_non_negative_index("X_t", "M", M);
-      current_statement__ = 41;
+      current_statement__ = 40;
       validate_non_negative_index("X_t", "K", K);
-      current_statement__ = 42;
+      current_statement__ = 41;
       X_t = std::vector<Eigen::Matrix<double, -1, 1>>(M, Eigen::Matrix<double, -1, 1>(K));
       stan::math::fill(X_t, std::numeric_limits<double>::quiet_NaN());
       
-      current_statement__ = 42;
+      current_statement__ = 41;
       assign(X_t, rvalue(X, "X", index_min_max(1, M), index_omni()),
         "assigning variable X_t");
-      current_statement__ = 43;
+      current_statement__ = 42;
       validate_non_negative_index("y_t", "M", M);
-      current_statement__ = 44;
+      current_statement__ = 43;
       validate_non_negative_index("y_t", "H", H);
-      current_statement__ = 45;
+      current_statement__ = 44;
       y_t = std::vector<Eigen::Matrix<double, -1, 1>>(M, Eigen::Matrix<double, -1, 1>(H));
       stan::math::fill(y_t, std::numeric_limits<double>::quiet_NaN());
       
-      current_statement__ = 45;
+      current_statement__ = 44;
       assign(y_t, rvalue(y, "y", index_min_max(1, M), index_omni()),
         "assigning variable y_t");
-      current_statement__ = 46;
+      current_statement__ = 45;
       validate_non_negative_index("beta_raw", "H", H);
-      current_statement__ = 47;
+      current_statement__ = 46;
       validate_non_negative_index("beta_raw", "K", K);
-      current_statement__ = 48;
+      current_statement__ = 47;
       validate_non_negative_index("sigma_b", "K", K);
-      current_statement__ = 49;
+      current_statement__ = 48;
       validate_non_negative_index("beta", "H", H);
-      current_statement__ = 50;
+      current_statement__ = 49;
       validate_non_negative_index("beta", "K", K);
-      current_statement__ = 51;
-      validate_non_negative_index("Sigma", "H", H);
-      current_statement__ = 51;
-      validate_non_negative_index("Sigma", "H", H);
-      current_statement__ = 52;
+      current_statement__ = 50;
       validate_non_negative_index("tmp", "K", K);
-      current_statement__ = 53;
+      current_statement__ = 51;
       validate_non_negative_index("y_rep", "M", M);
-      current_statement__ = 54;
+      current_statement__ = 52;
       validate_non_negative_index("y_rep", "H", H);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -388,49 +382,43 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       beta = Eigen::Matrix<local_scalar_t__, -1, -1>(H, K);
       stan::math::fill(beta, DUMMY_VAR__);
       
-      Eigen::Matrix<local_scalar_t__, -1, -1> Sigma;
-      Sigma = Eigen::Matrix<local_scalar_t__, -1, -1>(H, H);
-      stan::math::fill(Sigma, DUMMY_VAR__);
-      
-      current_statement__ = 7;
-      assign(Sigma, gp_exp_quad_cov(y_cov, 1, 1), "assigning variable Sigma");
       Eigen::Matrix<local_scalar_t__, 1, -1> tmp;
       tmp = Eigen::Matrix<local_scalar_t__, 1, -1>(K);
       stan::math::fill(tmp, DUMMY_VAR__);
       
-      current_statement__ = 8;
+      current_statement__ = 6;
       assign(beta,
         add(beta_mean,
           elt_multiply(beta_sd,
             rvalue(beta_raw, "beta_raw", index_uni(1), index_omni()))),
         "assigning variable beta", index_uni(1), index_omni());
-      current_statement__ = 12;
+      current_statement__ = 10;
       for (int t = 2; t <= H; ++t) {
-        current_statement__ = 9;
+        current_statement__ = 7;
         assign(tmp, rvalue(beta, "beta", index_uni((t - 1)), index_omni()),
           "assigning variable tmp");
-        current_statement__ = 10;
+        current_statement__ = 8;
         assign(beta,
           add(tmp,
             elt_multiply(to_row_vector(sigma_b),
               rvalue(beta_raw, "beta_raw", index_uni(t), index_omni()))),
           "assigning variable beta", index_uni(t), index_omni());
       }
-      current_statement__ = 5;
-      check_cov_matrix(function__, "Sigma", Sigma);
       {
-        current_statement__ = 17;
+        current_statement__ = 15;
         lp_accum__.add(normal_lpdf<propto__>(sigma_b, 0, 1));
-        current_statement__ = 18;
+        current_statement__ = 16;
+        lp_accum__.add(normal_lpdf<propto__>(sigma_y, 0, 1));
+        current_statement__ = 17;
         lp_accum__.add(normal_lpdf<propto__>(to_vector(beta_raw), 0, 1));
-        current_statement__ = 21;
+        current_statement__ = 20;
         for (int i = 1; i <= M; ++i) {
-          current_statement__ = 19;
+          current_statement__ = 18;
           lp_accum__.add(
-            multi_normal_lpdf<propto__>(
+            normal_lpdf<propto__>(
               rvalue(y_t, "y_t", index_uni(i), index_omni()),
               multiply(beta, rvalue(X_t, "X_t", index_uni(i), index_omni())),
-              Sigma));
+              sigma_y));
         }
       }
     } catch (const std::exception& e) {
@@ -489,10 +477,6 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       beta = Eigen::Matrix<double, -1, -1>(H, K);
       stan::math::fill(beta, std::numeric_limits<double>::quiet_NaN());
       
-      Eigen::Matrix<double, -1, -1> Sigma;
-      Sigma = Eigen::Matrix<double, -1, -1>(H, H);
-      stan::math::fill(Sigma, std::numeric_limits<double>::quiet_NaN());
-      
       Eigen::Matrix<double, 1, -1> tmp;
       tmp = Eigen::Matrix<double, 1, -1>(K);
       stan::math::fill(tmp, std::numeric_limits<double>::quiet_NaN());
@@ -504,47 +488,42 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
             primitive_value(emit_generated_quantities__)))) {
         return ;
       } 
-      current_statement__ = 7;
-      assign(Sigma, gp_exp_quad_cov(y_cov, 1, 1), "assigning variable Sigma");
-      current_statement__ = 8;
+      current_statement__ = 6;
       assign(beta,
         add(beta_mean,
           elt_multiply(beta_sd,
             rvalue(beta_raw, "beta_raw", index_uni(1), index_omni()))),
         "assigning variable beta", index_uni(1), index_omni());
-      current_statement__ = 12;
+      current_statement__ = 10;
       for (int t = 2; t <= H; ++t) {
-        current_statement__ = 9;
+        current_statement__ = 7;
         assign(tmp, rvalue(beta, "beta", index_uni((t - 1)), index_omni()),
           "assigning variable tmp");
-        current_statement__ = 10;
+        current_statement__ = 8;
         assign(beta,
           add(tmp,
             elt_multiply(to_row_vector(sigma_b),
               rvalue(beta_raw, "beta_raw", index_uni(t), index_omni()))),
           "assigning variable beta", index_uni(t), index_omni());
       }
-      current_statement__ = 5;
-      check_cov_matrix(function__, "Sigma", Sigma);
       if (emit_transformed_parameters__) {
         out__.write(beta);
-        out__.write(Sigma);
         out__.write(tmp);
       } 
       if (logical_negation(emit_generated_quantities__)) {
         return ;
       } 
-      std::vector<Eigen::Matrix<double, -1, 1>> y_rep;
-      y_rep = std::vector<Eigen::Matrix<double, -1, 1>>(M, Eigen::Matrix<double, -1, 1>(H));
-      stan::math::fill(y_rep, std::numeric_limits<double>::quiet_NaN());
+      std::vector<std::vector<double>> y_rep;
+      y_rep = std::vector<std::vector<double>>(M, std::vector<double>(H, std::numeric_limits<double>::quiet_NaN()));
       
-      current_statement__ = 16;
+      
+      current_statement__ = 14;
       for (int i = 1; i <= M; ++i) {
-        current_statement__ = 14;
+        current_statement__ = 12;
         assign(y_rep,
-          multi_normal_rng(
+          normal_rng(
             multiply(beta, rvalue(X_t, "X_t", index_uni(i), index_omni())),
-            Sigma, base_rng__),
+            sigma_y, base_rng__),
           "assigning variable y_rep", index_uni(i), index_omni());
       }
       for (int sym1__ = 1; sym1__ <= H; ++sym1__) {
@@ -606,7 +585,7 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
   inline void get_param_names(std::vector<std::string>& names__) const {
     
     names__ = std::vector<std::string>{"beta_raw", "sigma_b", "sigma_y",
-      "beta", "Sigma", "tmp", "y_rep"};
+      "beta", "tmp", "y_rep"};
     
     } // get_param_names() 
     
@@ -619,7 +598,6 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
                                                                    },
       std::vector<size_t>{static_cast<size_t>(K)}, std::vector<size_t>{
       }, std::vector<size_t>{static_cast<size_t>(H), static_cast<size_t>(K)},
-      std::vector<size_t>{static_cast<size_t>(H), static_cast<size_t>(H)},
       std::vector<size_t>{static_cast<size_t>(K)},
       std::vector<size_t>{static_cast<size_t>(M), static_cast<size_t>(H)}};
     
@@ -652,15 +630,6 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
           for (int sym2__ = 1; sym2__ <= H; ++sym2__) {
             {
               param_names__.emplace_back(std::string() + "beta" + '.' + std::to_string(sym2__) + '.' + std::to_string(sym1__));
-            } 
-          }
-        } 
-      }
-      for (int sym1__ = 1; sym1__ <= H; ++sym1__) {
-        {
-          for (int sym2__ = 1; sym2__ <= H; ++sym2__) {
-            {
-              param_names__.emplace_back(std::string() + "Sigma" + '.' + std::to_string(sym2__) + '.' + std::to_string(sym1__));
             } 
           }
         } 
@@ -717,11 +686,6 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
           }
         } 
       }
-      for (int sym1__ = 1; sym1__ <= (H + ((H * (H - 1)) / 2)); ++sym1__) {
-        {
-          param_names__.emplace_back(std::string() + "Sigma" + '.' + std::to_string(sym1__));
-        } 
-      }
       for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
         {
           param_names__.emplace_back(std::string() + "tmp" + '.' + std::to_string(sym1__));
@@ -745,13 +709,13 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma_b\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(K) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"sigma_y\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"Sigma\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(H) + "},\"block\":\"transformed_parameters\"},{\"name\":\"tmp\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"vector\",\"length\":" + std::to_string(H) + "}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma_b\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(K) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"sigma_y\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"tmp\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"array\",\"length\":" + std::to_string(H) + ",\"element_type\":{\"name\":\"real\"}}},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma_b\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(K) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"sigma_y\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"Sigma\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string((H + ((H * (H - 1)) / 2))) + "},\"block\":\"transformed_parameters\"},{\"name\":\"tmp\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"vector\",\"length\":" + std::to_string(H) + "}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma_b\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(K) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"sigma_y\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"tmp\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"array\",\"length\":" + std::to_string(H) + ",\"element_type\":{\"name\":\"real\"}}},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -766,8 +730,7 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
   (((H * K) + K) + 1);
-      const size_t num_transformed = (((H * K) +
-                                                               (H * H)) + K);
+      const size_t num_transformed = ((H * K) + K);
       const size_t num_gen_quantities = 
   (M * H);
       std::vector<double> vars_vec(num_params__
@@ -789,8 +752,7 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
   (((H * K) + K) + 1);
-      const size_t num_transformed = (((H * K) +
-                                                               (H * H)) + K);
+      const size_t num_transformed = ((H * K) + K);
       const size_t num_gen_quantities = 
   (M * H);
       vars.resize(num_params__

@@ -8,9 +8,9 @@ The UHI effect is important to study, as in the near future, due to climate chan
 
 * **data_processing.py:** This generates the necessary csv file to create the data for the model. The datasets necessary to run this are and the script takes around 2 hours to run:
 	* ![Hyperlocal Temperature Monitoring][https://data.cityofnewyork.us/dataset/Hyperlocal-Temperature-Monitoring/qdq3-9eqn/data]
-	* ![Park Property][https://data.cityofnewyork.us/City-Government/ARCHIVED-Parks-Properties/k2ya-ucmv]
-	* ![Buildings][https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh]
-	* ![2015 Tree Census][https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/pi5s-9p35]
+	* !(Park Property)[https://data.cityofnewyork.us/City-Government/ARCHIVED-Parks-Properties/k2ya-ucmv]
+	* !(Buildings)[https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh]
+	* !(2015 Tree Census)[https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/pi5s-9p35]
 
 * **data_processing_models.py:** After the data.csv has been created, this generates smaller h5 files, which act as inputs to the models. These have been provided on GitHub.
 * **final_report.py:** The final report! (Takes about 2.5-3 hours to run)

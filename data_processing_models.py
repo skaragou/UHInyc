@@ -18,6 +18,7 @@ if __name__ == '__main__':
     data['is_august'] = (data.Day.dt.month == 8).astype(int)
     data['bias'] = 1
 
+
     print('~Creating 24h Dataset~')
     g = data.groupby(['Sensor.ID'])
 

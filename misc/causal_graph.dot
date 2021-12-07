@@ -1,0 +1,16 @@
+Digraph G {
+
+a [label="Tree Canopy"];
+b [label="Temperature"];
+c [label="Proximity to Parks"];
+d [label="Building Density"];
+e [label="Proximity to Body of Water"];
+
+
+ a -> b;
+ c -> b;
+ d -> b;
+ e -> b;
+ a -> d [dir=both,arrowtail="normal",style="dashed"];
+    
+}

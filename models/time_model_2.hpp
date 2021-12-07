@@ -17,60 +17,61 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 53> locations_array__ = 
+static constexpr std::array<const char*, 54> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 21, column 2 to column 24)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 22, column 2 to column 27)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 23, column 2 to column 24)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 26, column 2 to column 20)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 30, column 2 to column 20)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 31, column 2 to column 51)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 34, column 4 to column 23)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 35, column 4 to column 60)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 33, column 16 to line 36, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 33, column 2 to line 36, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 50, column 2 to column 18)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 52, column 4 to column 53)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 51, column 17 to line 53, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 51, column 2 to line 53, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 39, column 2 to column 24)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 40, column 2 to column 24)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 41, column 2 to column 37)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 44, column 4 to column 47)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 43, column 17 to line 45, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 43, column 2 to line 45, column 3)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 2, column 2 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 3, column 2 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 4, column 2 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 5, column 2 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 6, column 14 to column 15)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 6, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 6, column 2 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 7, column 14 to column 15)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 7, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 7, column 2 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 8, column 18 to column 19)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 8, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 8, column 2 to column 21)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 9, column 13 to column 14)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 9, column 2 to column 26)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 10, column 13 to column 14)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 10, column 2 to column 24)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 13, column 2 to column 16)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 14, column 16 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 14, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 14, column 2 to column 30)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 17, column 16 to column 17)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 17, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 17, column 2 to column 30)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 21, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 21, column 12 to column 13)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 22, column 24 to column 25)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 26, column 9 to column 10)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 26, column 12 to column 13)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 30, column 13 to column 14)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 50, column 13 to column 14)",
- " (in '/Users/sotiriskaragounis/git/UHInyc/time_model_2.stan', line 50, column 15 to column 16)"};
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 22, column 2 to column 24)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 23, column 2 to column 27)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 24, column 2 to column 24)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 28, column 2 to column 20)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 30, column 2 to column 20)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 31, column 2 to column 51)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 34, column 4 to column 23)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 35, column 4 to column 60)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 33, column 16 to line 36, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 33, column 2 to line 36, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 63, column 2 to column 20)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 67, column 6 to column 57)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 66, column 19 to line 68, column 5)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 66, column 4 to line 68, column 5)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 65, column 17 to line 69, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 65, column 2 to line 69, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 52, column 2 to column 24)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 53, column 2 to column 27)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 54, column 2 to column 37)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 57, column 4 to column 47)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 56, column 17 to line 58, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 56, column 2 to line 58, column 3)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 2, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 3, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 4, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 5, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 6, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 7, column 14 to column 15)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 7, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 7, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 8, column 14 to column 15)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 8, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 8, column 2 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 9, column 13 to column 14)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 9, column 2 to column 26)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 11, column 13 to column 14)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 11, column 2 to column 24)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 14, column 2 to column 16)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 15, column 16 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 15, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 15, column 2 to column 30)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 18, column 16 to column 17)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 18, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 18, column 2 to column 30)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 22, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 22, column 12 to column 13)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 23, column 24 to column 25)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 28, column 9 to column 10)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 28, column 12 to column 13)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 30, column 13 to column 14)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 63, column 13 to column 14)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 63, column 15 to column 16)",
+ " (in '/Users/sotiriskaragounis/git/UHInyc/models/time_model_2.stan', line 63, column 17 to column 18)"};
 
 
 
@@ -81,9 +82,9 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
   int M;
   int H;
   int K;
+  int L;
   std::vector<Eigen::Matrix<double, -1, 1>> X;
   std::vector<Eigen::Matrix<double, -1, 1>> y;
-  std::vector<Eigen::Matrix<double, -1, 1>> y_cov;
   Eigen::Matrix<double, 1, -1> beta_mean__;
   Eigen::Matrix<double, 1, -1> beta_sd__;
   int T;
@@ -119,47 +120,56 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       pos__ = std::numeric_limits<int>::min();
       
       pos__ = 1;
-      current_statement__ = 21;
+      current_statement__ = 23;
       context__.validate_dims("data initialization","N","int",
            std::vector<size_t>{});
       N = std::numeric_limits<int>::min();
       
-      current_statement__ = 21;
+      current_statement__ = 23;
       N = context__.vals_i("N")[(1 - 1)];
-      current_statement__ = 21;
+      current_statement__ = 23;
       check_greater_or_equal(function__, "N", N, 0);
-      current_statement__ = 22;
+      current_statement__ = 24;
       context__.validate_dims("data initialization","M","int",
            std::vector<size_t>{});
       M = std::numeric_limits<int>::min();
       
-      current_statement__ = 22;
+      current_statement__ = 24;
       M = context__.vals_i("M")[(1 - 1)];
-      current_statement__ = 22;
+      current_statement__ = 24;
       check_greater_or_equal(function__, "M", M, 0);
-      current_statement__ = 23;
+      current_statement__ = 25;
       context__.validate_dims("data initialization","H","int",
            std::vector<size_t>{});
       H = std::numeric_limits<int>::min();
       
-      current_statement__ = 23;
+      current_statement__ = 25;
       H = context__.vals_i("H")[(1 - 1)];
-      current_statement__ = 23;
+      current_statement__ = 25;
       check_greater_or_equal(function__, "H", H, 0);
-      current_statement__ = 24;
+      current_statement__ = 26;
       context__.validate_dims("data initialization","K","int",
            std::vector<size_t>{});
       K = std::numeric_limits<int>::min();
       
-      current_statement__ = 24;
-      K = context__.vals_i("K")[(1 - 1)];
-      current_statement__ = 24;
-      check_greater_or_equal(function__, "K", K, 0);
-      current_statement__ = 25;
-      validate_non_negative_index("X", "N", N);
       current_statement__ = 26;
-      validate_non_negative_index("X", "K", K);
+      K = context__.vals_i("K")[(1 - 1)];
+      current_statement__ = 26;
+      check_greater_or_equal(function__, "K", K, 0);
       current_statement__ = 27;
+      context__.validate_dims("data initialization","L","int",
+           std::vector<size_t>{});
+      L = std::numeric_limits<int>::min();
+      
+      current_statement__ = 27;
+      L = context__.vals_i("L")[(1 - 1)];
+      current_statement__ = 27;
+      check_greater_or_equal(function__, "L", L, 0);
+      current_statement__ = 28;
+      validate_non_negative_index("X", "N", N);
+      current_statement__ = 29;
+      validate_non_negative_index("X", "K", K);
+      current_statement__ = 30;
       context__.validate_dims("data initialization","X","double",
            std::vector<size_t>{static_cast<size_t>(N),
             static_cast<size_t>(K)});
@@ -168,27 +178,27 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       
       {
         std::vector<local_scalar_t__> X_flat__;
-        current_statement__ = 27;
+        current_statement__ = 30;
         X_flat__ = context__.vals_r("X");
-        current_statement__ = 27;
+        current_statement__ = 30;
         pos__ = 1;
-        current_statement__ = 27;
+        current_statement__ = 30;
         for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
-          current_statement__ = 27;
+          current_statement__ = 30;
           for (int sym2__ = 1; sym2__ <= N; ++sym2__) {
-            current_statement__ = 27;
+            current_statement__ = 30;
             assign(X, X_flat__[(pos__ - 1)],
               "assigning variable X", index_uni(sym2__), index_uni(sym1__));
-            current_statement__ = 27;
+            current_statement__ = 30;
             pos__ = (pos__ + 1);
           }
         }
       }
-      current_statement__ = 28;
+      current_statement__ = 31;
       validate_non_negative_index("y", "N", N);
-      current_statement__ = 29;
+      current_statement__ = 32;
       validate_non_negative_index("y", "H", H);
-      current_statement__ = 30;
+      current_statement__ = 33;
       context__.validate_dims("data initialization","y","double",
            std::vector<size_t>{static_cast<size_t>(N),
             static_cast<size_t>(H)});
@@ -197,47 +207,17 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       
       {
         std::vector<local_scalar_t__> y_flat__;
-        current_statement__ = 30;
+        current_statement__ = 33;
         y_flat__ = context__.vals_r("y");
-        current_statement__ = 30;
+        current_statement__ = 33;
         pos__ = 1;
-        current_statement__ = 30;
+        current_statement__ = 33;
         for (int sym1__ = 1; sym1__ <= H; ++sym1__) {
-          current_statement__ = 30;
+          current_statement__ = 33;
           for (int sym2__ = 1; sym2__ <= N; ++sym2__) {
-            current_statement__ = 30;
+            current_statement__ = 33;
             assign(y, y_flat__[(pos__ - 1)],
               "assigning variable y", index_uni(sym2__), index_uni(sym1__));
-            current_statement__ = 30;
-            pos__ = (pos__ + 1);
-          }
-        }
-      }
-      current_statement__ = 31;
-      validate_non_negative_index("y_cov", "H", H);
-      current_statement__ = 32;
-      validate_non_negative_index("y_cov", "M", M);
-      current_statement__ = 33;
-      context__.validate_dims("data initialization","y_cov","double",
-           std::vector<size_t>{static_cast<size_t>(H),
-            static_cast<size_t>(M)});
-      y_cov = std::vector<Eigen::Matrix<double, -1, 1>>(H, Eigen::Matrix<double, -1, 1>(M));
-      
-      
-      {
-        std::vector<local_scalar_t__> y_cov_flat__;
-        current_statement__ = 33;
-        y_cov_flat__ = context__.vals_r("y_cov");
-        current_statement__ = 33;
-        pos__ = 1;
-        current_statement__ = 33;
-        for (int sym1__ = 1; sym1__ <= M; ++sym1__) {
-          current_statement__ = 33;
-          for (int sym2__ = 1; sym2__ <= H; ++sym2__) {
-            current_statement__ = 33;
-            assign(y_cov, y_cov_flat__[(pos__ - 1)],
-              "assigning variable y_cov", index_uni(sym2__),
-                                            index_uni(sym1__));
             current_statement__ = 33;
             pos__ = (pos__ + 1);
           }
@@ -331,8 +311,10 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       current_statement__ = 50;
       validate_non_negative_index("tmp", "K", K);
       current_statement__ = 51;
-      validate_non_negative_index("y_rep", "M", M);
+      validate_non_negative_index("y_rep", "L", L);
       current_statement__ = 52;
+      validate_non_negative_index("y_rep", "M", M);
+      current_statement__ = 53;
       validate_non_negative_index("y_rep", "H", H);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -405,15 +387,15 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
           "assigning variable beta", index_uni(t), index_omni());
       }
       {
-        current_statement__ = 15;
-        lp_accum__.add(normal_lpdf<propto__>(sigma_b, 0, 1));
-        current_statement__ = 16;
-        lp_accum__.add(normal_lpdf<propto__>(sigma_y, 0, 1));
         current_statement__ = 17;
+        lp_accum__.add(normal_lpdf<propto__>(sigma_b, 0, 1));
+        current_statement__ = 18;
+        lp_accum__.add(inv_gamma_lpdf<propto__>(sigma_y, 1, 1));
+        current_statement__ = 19;
         lp_accum__.add(normal_lpdf<propto__>(to_vector(beta_raw), 0, 1));
-        current_statement__ = 20;
+        current_statement__ = 22;
         for (int i = 1; i <= M; ++i) {
-          current_statement__ = 18;
+          current_statement__ = 20;
           lp_accum__.add(
             normal_lpdf<propto__>(
               rvalue(y_t, "y_t", index_uni(i), index_omni()),
@@ -513,22 +495,28 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       if (logical_negation(emit_generated_quantities__)) {
         return ;
       } 
-      std::vector<std::vector<double>> y_rep;
-      y_rep = std::vector<std::vector<double>>(M, std::vector<double>(H, std::numeric_limits<double>::quiet_NaN()));
+      std::vector<std::vector<std::vector<double>>> y_rep;
+      y_rep = std::vector<std::vector<std::vector<double>>>(L, std::vector<std::vector<double>>(M, std::vector<double>(H, std::numeric_limits<double>::quiet_NaN())));
       
       
-      current_statement__ = 14;
-      for (int i = 1; i <= M; ++i) {
-        current_statement__ = 12;
-        assign(y_rep,
-          normal_rng(
-            multiply(beta, rvalue(X_t, "X_t", index_uni(i), index_omni())),
-            sigma_y, base_rng__),
-          "assigning variable y_rep", index_uni(i), index_omni());
+      current_statement__ = 16;
+      for (int l = 1; l <= L; ++l) {
+        current_statement__ = 14;
+        for (int i = 1; i <= M; ++i) {
+          current_statement__ = 12;
+          assign(y_rep,
+            normal_rng(
+              multiply(beta, rvalue(X_t, "X_t", index_uni(i), index_omni())),
+              sigma_y, base_rng__),
+            "assigning variable y_rep", index_uni(l), index_uni(i),
+                                          index_omni());
+        }
       }
       for (int sym1__ = 1; sym1__ <= H; ++sym1__) {
         for (int sym2__ = 1; sym2__ <= M; ++sym2__) {
-          out__.write(y_rep[(sym2__ - 1)][(sym1__ - 1)]);
+          for (int sym3__ = 1; sym3__ <= L; ++sym3__) {
+            out__.write(y_rep[(sym3__ - 1)][(sym2__ - 1)][(sym1__ - 1)]);
+          }
         }
       }
     } catch (const std::exception& e) {
@@ -599,7 +587,8 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
       std::vector<size_t>{static_cast<size_t>(K)}, std::vector<size_t>{
       }, std::vector<size_t>{static_cast<size_t>(H), static_cast<size_t>(K)},
       std::vector<size_t>{static_cast<size_t>(K)},
-      std::vector<size_t>{static_cast<size_t>(M), static_cast<size_t>(H)}};
+      std::vector<size_t>{static_cast<size_t>(L), static_cast<size_t>(M),
+                          static_cast<size_t>(H)}};
     
     } // get_dims() 
     
@@ -646,7 +635,11 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
         {
           for (int sym2__ = 1; sym2__ <= M; ++sym2__) {
             {
-              param_names__.emplace_back(std::string() + "y_rep" + '.' + std::to_string(sym2__) + '.' + std::to_string(sym1__));
+              for (int sym3__ = 1; sym3__ <= L; ++sym3__) {
+                {
+                  param_names__.emplace_back(std::string() + "y_rep" + '.' + std::to_string(sym3__) + '.' + std::to_string(sym2__) + '.' + std::to_string(sym1__));
+                } 
+              }
             } 
           }
         } 
@@ -698,7 +691,11 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
         {
           for (int sym2__ = 1; sym2__ <= M; ++sym2__) {
             {
-              param_names__.emplace_back(std::string() + "y_rep" + '.' + std::to_string(sym2__) + '.' + std::to_string(sym1__));
+              for (int sym3__ = 1; sym3__ <= L; ++sym3__) {
+                {
+                  param_names__.emplace_back(std::string() + "y_rep" + '.' + std::to_string(sym3__) + '.' + std::to_string(sym2__) + '.' + std::to_string(sym1__));
+                } 
+              }
             } 
           }
         } 
@@ -709,13 +706,13 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma_b\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(K) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"sigma_y\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"tmp\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"array\",\"length\":" + std::to_string(H) + ",\"element_type\":{\"name\":\"real\"}}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma_b\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(K) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"sigma_y\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"tmp\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(L) + ",\"element_type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"array\",\"length\":" + std::to_string(H) + ",\"element_type\":{\"name\":\"real\"}}}},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma_b\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(K) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"sigma_y\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"tmp\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"array\",\"length\":" + std::to_string(H) + ",\"element_type\":{\"name\":\"real\"}}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma_b\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(K) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"parameters\"},{\"name\":\"sigma_y\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"matrix\",\"rows\":" + std::to_string(H) + ",\"cols\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"tmp\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"y_rep\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(L) + ",\"element_type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"array\",\"length\":" + std::to_string(H) + ",\"element_type\":{\"name\":\"real\"}}}},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -732,7 +729,7 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
   (((H * K) + K) + 1);
       const size_t num_transformed = ((H * K) + K);
       const size_t num_gen_quantities = 
-  (M * H);
+  ((L * M) * H);
       std::vector<double> vars_vec(num_params__
        + (emit_transformed_parameters * num_transformed)
        + (emit_generated_quantities * num_gen_quantities));
@@ -754,7 +751,7 @@ class time_model_2_model final : public model_base_crtp<time_model_2_model> {
   (((H * K) + K) + 1);
       const size_t num_transformed = ((H * K) + K);
       const size_t num_gen_quantities = 
-  (M * H);
+  ((L * M) * H);
       vars.resize(num_params__
         + (emit_transformed_parameters * num_transformed)
         + (emit_generated_quantities * num_gen_quantities));

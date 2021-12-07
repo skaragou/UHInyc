@@ -87,16 +87,20 @@ def get_variables(
     num_buildings50 = defaultdict(set)
 
     for i, _ in tqdm(loc_coords.iterrows(), total=loc_coords.shape[0]):
-        out = tree_coords.distance(
-            loc_coords.iloc[[i] * tree_coords.shape[0]].reset_index(0).drop(columns='index'))
+        result = loc_coords.iloc[[i] * tree_coords.shape[0]]
+        result = result.reset_index(0).drop(columns='index')
+        out = tree_coords.distance(result)
         num_trees15.append(sum(out <= 15))
 
-        out = parks_coords.geometry.distance(loc_coords.iloc[[
-                                             i] * parks_coords.shape[0]].reset_index(0).drop(columns='index'), align=False)
+        result = loc_coords.iloc[[i] * parks_coords.shape[0]]
+        result = result.reset_index(0).drop(columns='index')
+        out = parks_coords.geometry.distance(result)
         min_distance_park.append(min(out))
 
-        out = build_coords.geometry.distance(
-            loc_coords.iloc[[i] * build_coords.shape[0]].reset_index(0).drop(columns='index'))
+        result = loc_coords.iloc[[i] * build_coords.shape[0]]
+        result = result.reset_index(0).drop(columns='index')
+        out = build_coords.geometry.distance(result)
+
         for _, row in build_coords[out <= 50].iterrows():
             num_buildings50[i].add((row['height'], row['area']))
 

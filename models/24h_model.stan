@@ -23,11 +23,10 @@ transformed parameters{
 
   for(t in 2:H) {
     tmp = beta[t - 1,];
-    beta[t,] = tmp + to_row_vector(sigma_b) .* beta_raw[t,];  
+    beta[t,] = tmp + beta_raw[t,];  
   }
 }
 model {
-  sigma_b ~ normal(0,1);
   sigma_y ~ inv_gamma(1,1);
   to_vector(beta_raw) ~ normal(0, 1);
 

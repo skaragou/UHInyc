@@ -131,8 +131,6 @@ if __name__ == '__main__':
         parks_coords,
         loc_coords,
         sensor_ids)
-    locs['Latitude'] = locs['geometry'].y
-    locs['Longitude'] = locs['geometry'].x
     locs = locs.drop(columns='geometry')
     # temp = temp.merge(locs)
     temp.to_csv('temp.csv', index=False)

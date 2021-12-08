@@ -1,4 +1,4 @@
-## Final Report - Modeling the Urban Head Island Effect in NYC
+## Final Report - Modeling the Urban Heat Island Effect in NYC
 
 <img src="misc/graph.png">
 
